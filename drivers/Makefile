@@ -205,7 +205,7 @@ obj-y				+= ec_hid_driver/
 obj-y				+= gamepad_hid_driver/
 
 #Tuxera
-ifeq ($(ASUS_BUILD_PROJECT),ZS673KS)
+ifdef CONFIG_MACH_ASUS_ZS673KS
 	ifdef CONFIG_TUXERA_USERDEBUG
 		obj-y				+= tuxera/zs673ks/exfat/userdebug/
 		obj-y				+= tuxera/zs673ks/ntfs/userdebug/
